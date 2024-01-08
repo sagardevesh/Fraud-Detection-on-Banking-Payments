@@ -21,22 +21,36 @@ We skimmed through the original data and found an interesting pattern regarding 
 
 Data Cleansing:
 For data cleansing, we checked for missing values, however the dataset does not have any missing values. The dataset also has several columns in which the values are within quotation marks. These quotation marks will not play any role in influencing the performance of the model. Hence, we removed all the quotation marks from whichever features that had them.
+
 Oversampling:
 Another transformation that we applied to the dataset was SMOTE (Synthetic Minority Oversampling Technique) oversampling. The target feature ‘fraud’ is skewed in which 98.79% of the transactions are normal while only 1.21% are fraudulent transactions. This imbalance introduces bias into the dataset which would have affected the model’s predictions. Hence, we performed oversampling in which we duplicated the instances of the minority class (fraudulent transactions) to achieve some balance in the target feature.
 The selected Banksim synthetic dataset serves the purpose of our project, as it has all the features that could potentially lead a model into predicting whether a transaction is fraudulent or not. More importantly, it has a binary class target feature ‘fraud’, which eventually gives us the information about the class of prediction.
+
 3. Literature Review
+   
 Source 1:
+
 Credit Card Fraud Detection Algorithm using Logistic Regression [3]
+
 This source of literature aims to compare the performance of four machine learning models - Logistic Regression, K-Nearest Neighbor, Decision Tree Classification and Random Forest Algorithm in detecting fraudulent transactions in bank payments. We have chosen logistic regression implementation from this paper and have worked on how the implementation could be improved in our approach. The dataset used for training the models is the Banksim dataset.
+
 The target feature in the dataset reveals whether a transaction is fraudulent or non-fraudulent, however the number of fraudulent transactions naturally is far too small as compared to non-fraudulent transactions. The class instances (1 and 0) in the target feature are imbalanced. This introduces some bias in the dataset. To address this bias, the authors of the paper have used the under-sampling technique for balancing the dataset. Using under sampling, however, may lead to loss of potentially important data as events are removed without any consideration for what they are and how useful they might be for the analysis. In our approach, we have used oversampling instead of under sampling to get rid of the bias, as using this method ensures that no information from the original training set is lost as we keep all the members of the majority or minority class.
+
 Authors of the paper have mentioned about the strength of different features in the dataset, however they have not highlighted feature selection or feature elimination. Feature selection is important as it helps in reducing the number of input variables, thereby reducing the overall computational cost of the model. Keeping this in mind, we have implemented Recursive feature elimination (RFE) for selecting the most prominent features to be used as input variables. RFE removes the weakest features until a specified number of features is reached. By default, it eliminates half the
+
 features based on their importance. In our case, RFE eliminated 15 features out of 30 which reduced the computational complexity of the model significantly.
 The paper shows the implementation of the logistic regression algorithm with a good accuracy, but it does not talk about hyperparameter tuning. Hyperparameter tuning helps in choosing the best set of parameters to minimize the error and draw out the best performance from a model. We have implemented hyperparameter tuning using the RandomizedSearchCV technique in which random combinations of the hyperparameters are used to find the best solution. Implementing this gives us the best set of parameters to be used in the logistic regression model.
+
 Source 2 -
 Credit Card Fraud Detection Algorithm using Decision Trees based Random Forest Classifier [2]
 In this source of literature research, the focus is on the detection of fraudulent transactions using the Random Forest classifier algorithm. The problem statement here is trying to solve a supervised classification problem, with the help of decision trees to classify the dataset. Once the classification is done, the results are evaluated using a confusion matrix. This paper aims at improving the accuracy of fraud detection by using real-time transactional data from a European banking institution.
+
 The study systematically follows the steps to implement the system, starting with extraction, cleaning, pre-processing, classifying the data into training and testing sets, applying a random forest algorithm to the dataset and finally deriving the results and evaluating them.
+
 The strength of the study is the diversity of the dataset considered and the varied analysis performed on the dataset. The paper brings together insights on how fraudulent credit card transactions are performed in different locations as well as different banking environments.
+![image](https://github.com/sagardevesh/Fraud-Detection-on-Banking-Payments/assets/25725480/8dfe8bd7-af12-4142-a6ce-998967df3132)
+
+
 However, the paper has very little information on the evaluation process. It doesn’t provide details on how the accuracy and confusion matrix is calculated and performed. Also, it lacks the insights that are derived from the same.
 Also, the paper doesn’t talk about the hyperparameter tuning of the random forest algorithm. The paper doesn’t address the issue of the original model failing to give good accuracy and how it can be tuned to give better results.
 With the help of this research paper source, we will be using the same approach in implementing the random forest algorithm and using similar techniques to clean, pre-process and classify the dataset. This paper helps enrich our solution and helps us better understand the significance of the random forest algorithm and how it can be used to evaluate the predictive analysis of fraudulent transactions.
@@ -51,7 +65,7 @@ The classification and the regression trees use the Gini coefficient, which is t
 As a part of the research, we built six decision tree models. Three before smote and three later. The first one is a generic decision tree based on KBest features, following which is the Gini and entropy model. The current paper has only been implemented using Gini. In our project, we are also implementing the model using entropy. We have
 also plotted the learning curve based on the misclassification error. Finally, we plotted a confusion matrix for the Gini and entropy model after smote.
 This paper helped us in bringing a better insight into the decision tree in terms of practical development. We could use that similar technique to build and evaluate our model.
-4. Description of the solution
+5. Description of the solution
 Project description
 1. Business Understanding:
 In this section of the project, we understood the requirement of the project, the problems faced by the user in the area of bank fraud detection. We discovered a dataset that was artificially created and had payments from multiple clients made across a range of durations and quantities. The target variable in the dataset was fraud or non-fraud through which we concluded that we must solve a classification problem.
