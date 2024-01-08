@@ -1,5 +1,7 @@
 # Fraud-Detection-on-Banking-Payments
 
+*****Please refer to the report file for more clear images**************
+
 CSCI-6409
 PROCESS OF DATA SCIENCE
 FRAUD DETECTION ON BANKING PAYMENTS
