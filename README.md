@@ -128,6 +128,9 @@ This feature represents the age of all the customers that were involved in the t
 ![image](https://github.com/sagardevesh/Fraud-Detection-on-Banking-Payments/assets/25725480/07c54951-46c8-4031-8be3-c43acb6fae9a)
 
 
+![image](https://github.com/sagardevesh/Fraud-Detection-on-Banking-Payments/assets/25725480/078903de-ef32-4e53-b0ba-83ef90d9d0b3)
+
+
 Gender: This feature represents the gender of the customer. Below are the 4 classes:
 o F: Female,
 o M: Male,
