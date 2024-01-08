@@ -1,8 +1,5 @@
 # Fraud-Detection-on-Banking-Payments
 
-![image](https://github.com/sagardevesh/Fraud-Detection-on-Banking-Payments/assets/25725480/8b64220f-e55c-4639-926b-86a8f90c9378)
-
-
 CSCI-6409
 PROCESS OF DATA SCIENCE
 FRAUD DETECTION ON BANKING PAYMENTS
