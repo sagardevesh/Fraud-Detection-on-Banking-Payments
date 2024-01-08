@@ -1,5 +1,8 @@
 # Fraud-Detection-on-Banking-Payments
 
+![image](https://github.com/sagardevesh/Fraud-Detection-on-Banking-Payments/assets/25725480/8b64220f-e55c-4639-926b-86a8f90c9378)
+
+
 CSCI-6409
 PROCESS OF DATA SCIENCE
 FRAUD DETECTION ON BANKING PAYMENTS
@@ -126,9 +129,6 @@ o U: Unknown
 This feature represents the age of all the customers that were involved in the transactions as per the Banksim dataset. The below bar plot shows the number of customers of each age group in the dataset. The age group ‘2’ with customers between the age of 26 and 35 years is the largest group, whereas customers below 18 years of age are the least in number.
 
 ![image](https://github.com/sagardevesh/Fraud-Detection-on-Banking-Payments/assets/25725480/07c54951-46c8-4031-8be3-c43acb6fae9a)
-
-
-![image](https://github.com/sagardevesh/Fraud-Detection-on-Banking-Payments/assets/25725480/078903de-ef32-4e53-b0ba-83ef90d9d0b3)
 
 
 Gender: This feature represents the gender of the customer. Below are the 4 classes:
