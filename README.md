@@ -299,3 +299,28 @@ Another limitation of our approach is that we have used synthetic data which has
 [3]"Fraud Detection on Bank Payments Using Machine Learning", Ieeexplore.ieee.org
 , 2022. [Online]. Available: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9726104. [Accessed: 03- Aug- 2022].
 [4]"Fraud Detection on Bank Payments", Kaggle.com, 2022. [Online]. Available: https://www.kaggle.com/code/turkayavci/fraud-detection-on-bank-payments. [Accessed: 03- Aug- 2022].
+
+
+## Steps to run on local machine/jupyter notebook:
+To run this assignment on your local machine, you need the following software installed.
+
+***********************************************
+Anaconda Environment
+
+Python
+**************************************************
+
+To install Python, download it from the following link and install it on your local machine:
+
+https://www.python.org/downloads/
+
+To install Anaconda, download it from the following link and install it on your local machine:
+
+https://www.anaconda.com/products/distribution
+
+After installing the required software, clone the repo, and run the following command for opening the code in jupyter notebook.
+
+jupyter notebook Fraud-Detection-Banking-Payments.ipynb
+This command will open up a browser window with jupyter notebook loading the project code.
+
+You need to upload the dataset from the git repo to your jupyter notebook environment.
