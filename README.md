@@ -3,16 +3,7 @@
 *****Please refer to the report file for more clear images*****
 
 CSCI-6409
-PROCESS OF DATA SCIENCE
-FRAUD DETECTION ON BANKING PAYMENTS
-Course Instructor: Dr. Axel Soto
-GROUP MEMBERS:
-Name
-B00 ###
-SAGAR DEVESH
-B00905507
-SARTHAK PANDIT
-B00900388
+PROCESS OF DATA SCIENCE FRAUD DETECTION ON BANKING PAYMENTS
 
 1. Data understanding and pre-processing –
 We have used the Banksim dataset for our project to detect fraudulent transactions. Banksim is an abbreviation for Bank Payment Simulation. We have the ‘fraud’ feature as our target variable which will provide us with the information of whether a particular transaction is fraudulent or non-fraudulent.
